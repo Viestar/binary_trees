@@ -1,5 +1,6 @@
 
 ![Binary trees](./assets/Screenshot%20from%202023-08-01%2023-48-52.png)
+> # BINARY TREES
 # Table of contents
 TASK NUMBER | LINK TO TASK CODE | TASK DESCRIPTION
 ----- | ------ | ----------
