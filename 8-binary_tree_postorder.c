@@ -13,15 +13,9 @@
  */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int))
 {
-    if (tree == NULL || func == NULL)
-        return;
-
-    /** Recursive post-order traversal on the left subtree */
-    binary_tree_postorder(tree->left, func);
-
-    /** Recursive post-order traversal on the right subtree */
-    binary_tree_postorder(tree->right, func);
-
-    /** Call the function for the current node */
-    func(tree->n);
+if (tree == NULL || func == NULL)
+return;
+binary_tree_postorder(tree->left, func);
+binary_tree_postorder(tree->right, func);
+func(tree->n);
 }
