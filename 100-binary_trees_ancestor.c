@@ -86,11 +86,13 @@ binary_tree_t *peep_nodes(const binary_tree_t *first,
 }
 
 /**
- * depth - Measures node depth.
+ * binary_tree_local_depth - Measures node depth.
  * @tree: A pointer to the node.
  * Return: If tree is NULL, your function must return 0, else return the depth.
  */
 size_t binary_tree_local_depth(const binary_tree_t *tree)
 {
-	return ((tree->parent != NULL) ? 1 + binary_tree_local_depth(tree->parent) : 0);
+	return ((tree->parent != NULL) ? 1 +
+										 binary_tree_local_depth(tree->parent)
+								   : 0);
 }
