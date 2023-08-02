@@ -25,4 +25,6 @@ TASK NUMBER | LINK TO TASK CODE | TASK DESCRIPTION
 [0x18] | [Uncle](./18-binary_tree_uncle.c) | A function that finds the Uncle of a node.
 [] | [ ## ADVANCED TASKS] | 
 [0x19] | [Lowest Common Ancestors](./100-binary_trees_ancestor.c) | A function that finds the lowest common ancestor of two nodes.
-[0x20] | [Level-order traversal](./101-binary_trees_levelorder.c) | A function that goes through a binary tree using level-order traversal.s
+[0x20] | [Level-order traversal](./101-binary_tree_levelorder.c) | A function that goes through a binary tree using level-order traversal.s
+[0x21] | [Is Complete](./102-binary_tree_is_complete.c) | A  function that checks if a binary tree is complete.
+[0x21] | [Is Complete](./102-binary_tree_is_complete.c) | A  function that checks if a binary tree is complete.
