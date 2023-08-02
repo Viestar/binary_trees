@@ -28,4 +28,5 @@ TASK NUMBER | LINK TO TASK CODE | TASK DESCRIPTION
 [0x20] | [Level-order traversal](./101-binary_tree_levelorder.c) | A function that goes through a binary tree using level-order traversal.s
 <!-- [0x21] | [Is Complete](./102-binary_tree_is_complete.c) | A  function that checks if a binary tree is complete. -->
 [0x22] | [Rotate left](./103-binary_tree_rotate_left.c) | A  function that Left-rotates a binary tree.
-[0x22] | [Rotate left](./103-binary_tree_rotate_left.c) | A  function that Left-rotates a binary tree.
+[0x23] | [Rotate right](./104-binary_tree_rotate_right.c) | A  function that right-rotates a binary tree.
+[0x23] | [Rotate right](./104-binary_tree_rotate_right.c) | A  function that right-rotates a binary tree.
