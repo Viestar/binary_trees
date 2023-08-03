@@ -32,4 +32,6 @@ TASK NUMBER | LINK TO TASK CODE | TASK DESCRIPTION
 0x25 | [BST - Insert](./111-bst_insert.c) | A  function that inserts a value in a Binary Search Trees
 0x26 | [BST - Array to BST](./112-array_to_bst.c) | A  function that builds a binary search tree from an array.
 [0x27] | [BST - Search](./113-bst_search.c) | A  function that searches for a value in a binary search tree.
+[0x28] | [BST - Remove](./114-bst_remove.c) | A  function that removes a node from a Binary Search Tree.
+[0x29] | [Big O #BST](./115-O) | Average time complexities of those operations on a Binary Search Tree (one answer per line): 1. Inserting the value n 2. Removing the node with the value n 3. Searching for a node in a BST of size n
 <!-- [0x21] | [Is Complete](./102-binary_tree_is_complete.c) | A  function that checks if a binary tree is complete. -->
