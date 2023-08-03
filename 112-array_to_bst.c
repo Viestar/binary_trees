@@ -2,6 +2,7 @@
 
 /* Prototypes */
 bst_t *bst_search(const bst_t *tree, int value);
+void binary_tree_delete(binary_tree_t *tree);
 
 /**
  * array_to_bst - Builds a binary search tree from an array.
@@ -54,4 +55,17 @@ bst_t *bst_search(const bst_t *tree, int value)
 		return (bst_search(tree->right, value));
 	}
 	return (NULL);
+}
+
+/**
+ * binary_tree_delete - Deletes an entire binary tree.
+ * @tree: Pointer to the root node of the tree to delete.
+ */
+void binary_tree_delete(binary_tree_t *tree)
+{
+	if (tree == NULL)
+		return;
+	binary_tree_delete(tree->left);
+	binary_tree_delete(tree->right);
+	free(tree);
 }
