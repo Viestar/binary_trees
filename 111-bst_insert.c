@@ -8,45 +8,44 @@
  */
 bst_t *bst_insert(bst_t **tree, int value)
 {
-    bst_t *local_tree;
-    bst_t *new_tree;
+	bst_t *local_tree;
+	bst_t *new_tree;
 
-    if (!tree)
-        return (NULL);
+	if (!tree)
+		return (NULL);
 
-    local_tree = *tree;
-    if (local_tree == NULL)
-    {
-        /* Creating a new_tree tree incase a NULL pointer is passed */
-        new_tree = binary_tree_node(local_tree, value);
-        if (new_tree == NULL)
-            return (NULL);
-        return (*tree = new_tree);
-    }
+	local_tree = *tree;
+	if (local_tree == NULL)
+	{
+		/* Creating a new_tree tree incase a NULL pointer is passed */
+		new_tree = binary_tree_node(local_tree, value);
+		if (new_tree == NULL)
+			return (NULL);
+		return (*tree = new_tree);
+	}
+	if (value < local_tree->n)
+	{
+		/* Recursing through until a leaf is reached */
+		if (local_tree->left)
+			return (bst_insert(&local_tree->left, value));
 
-    if (value < local_tree->n)
-    {
-        /* Recursing through until a leaf is reached */
-        if (local_tree->left)
-            return (bst_insert(&local_tree->left, value));
+		/* inserting into the left subtree */
+		new_tree = binary_tree_node(local_tree, value);
+		if (new_tree == NULL)
+			return (NULL);
+		return (local_tree->left = new_tree);
+	}
+	if (value > local_tree->n)
+	{
+		/* Recursing through until a leaf is reached */
+		if (local_tree->right)
+			return (bst_insert(&local_tree->right, value));
 
-        /* inserting into the left subtree */
-        new_tree = binary_tree_node(local_tree, value);
-        if (new_tree == NULL)
-            return (NULL);
-        return (local_tree->left = new_tree);
-    }
-    if (value > local_tree->n)
-    {
-        /* Recursing through until a leaf is reached */
-        if (local_tree->right)
-            return (bst_insert(&local_tree->right, value));
-
-        /* inserting into the right subtree */
-        new_tree = binary_tree_node(local_tree, value);
-        if (new_tree == NULL)
-            return (NULL);
-        return (local_tree->right = new_tree);
-    }
-    return (NULL);
+		/* inserting into the right subtree */
+		new_tree = binary_tree_node(local_tree, value);
+		if (new_tree == NULL)
+			return (NULL);
+		return (local_tree->right = new_tree);
+	}
+	return (NULL);
 }

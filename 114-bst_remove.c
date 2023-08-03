@@ -8,47 +8,42 @@
  */
 bst_t *bst_remove(bst_t *root, int value)
 {
-    if (root == NULL)
-        return NULL;
+	bst_t *temp;
 
-    /* Search for the node with the given value. */
-    if (value < root->n)
-    {
-        root->left = bst_remove(root->left, value);
-    }
-    else if (value > root->n)
-    {
-        root->right = bst_remove(root->right, value);
-    }
-    else
-    {
-        /* Node with the given value found, handle removal cases.
-        Case 1 : Node has no children or only one child. */
-        if (root->left == NULL)
-        {
-            bst_t *temp = root->right;
-            free(root);
-            return temp;
-        }
-        else if (root->right == NULL)
-        {
-            bst_t *temp = root->left;
-            free(root);
-            return temp;
-        }
+	if (root == NULL)
+		return (NULL);
 
-        /* Case 2: Node has two children.
-        Find th e inorder successor (smallest node in the right subtree). */
-        bst_t *temp = root->right;
-        while (temp->left != NULL)
-            temp = temp->left;
+	if (value < root->n)
+	{
+		root->left = bst_remove(root->left, value);
+	}
+	else if (value > root->n)
+	{
+		root->right = bst_remove(root->right, value);
+	}
+	else
+	{
 
-        /* Copy the data of the inorder successor to the current node.*/
-        root->n = temp->n;
+		if (root->left == NULL)
+		{
+			temp = root->right;
+			free(root);
+			return (temp);
+		}
+		else if (root->right == NULL)
+		{
+			temp = root->left;
+			free(root);
+			return (temp);
+		}
+		temp = root->right;
+		while (temp->left != NULL)
+			temp = temp->left;
 
-        /* Remove the inorder successor from the right subtree. */
-        root->right = bst_remove(root->right, temp->n);
-    }
+		root->n = temp->n;
 
-    return root;
+		root->right = bst_remove(root->right, temp->n);
+	}
+
+	return (root);
 }
