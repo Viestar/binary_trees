@@ -23,11 +23,12 @@ TASK NUMBER | LINK TO TASK CODE | TASK DESCRIPTION
 [0x16] | [Is Perfect](./16-binary_tree_is_perfect.c) | A function that checks if a binary tree is perfect.
 [0x17] | [Sibling](./17-binary_tree_sibling.c) | A function that finds the sibling of a node
 [0x18] | [Uncle](./18-binary_tree_uncle.c) | A function that finds the Uncle of a node.
-[] | [ ## ADVANCED TASKS] | 
+  | [ ## ADVANCED TASKS] | 
 [0x19] | [Lowest Common Ancestors](./100-binary_trees_ancestor.c) | A function that finds the lowest common ancestor of two nodes.
 [0x20] | [Level-order traversal](./101-binary_tree_levelorder.c) | A function that goes through a binary tree using level-order traversal
 [0x22] | [Rotate left](./103-binary_tree_rotate_left.c) | A  function that Left-rotates a binary tree.
 [0x23] | [Rotate right](./104-binary_tree_rotate_right.c) | A  function that right-rotates a binary tree.
-[0x24] | [Is Binary search tree](./110-binary_tree_is_bst.c) | A  function that Checks if a binary tree is a valid binary search tree.
+[0x24] | [Is BST](./110-binary_tree_is_bst.c) | A  function that Checks if a binary tree is a valid binary search tree.
+0x25 | [BST - Insert](./111-bst_insert.c) | A  function that inserts a value in a Binary Search Trees
 [0x27] | [BST - Search](./113-bst_search.c) | A  function that searches for a value in a binary search tree.
 <!-- [0x21] | [Is Complete](./102-binary_tree_is_complete.c) | A  function that checks if a binary tree is complete. -->
