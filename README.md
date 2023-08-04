@@ -35,6 +35,7 @@ TASK NUMBER | LINK TO TASK CODE | TASK DESCRIPTION
 [0x28] | [BST - Remove](./114-bst_remove.c) | A  function that removes a node from a Binary Search Tree.
 [0x29] | [Big O #BST](./115-O) | Average time complexities of those operations on a Binary Search Tree (one answer per line): 1. Inserting the value n 2. Removing the node with the value n 3. Searching for a node in a BST of size n
 [0x30] | [Is AVL](./120-binary_tree_is_avl.c) | A  function that checks if a binary tree is a valid AVL Tree .Properties of an AVL Tree: An AVL Tree is a BST, The difference between heights of left and right subtrees cannot be more than one, The left and right subtrees must also be AVL trees
-
+[0x35] | [Big O #AVL Tree](./125-O) | Average time complexities of those operations on an AVL Tree (one answer per line): 1. Inserting the value n 2. Removing the node with the value n 3. Searching for a node in an AVL Tree of size n
+[0x41] | [Big O #Binary Heap](./135-O) | Average time complexities of those operations on a Binary Heap (one answer per line): 1. Inserting the value n 2. Removing the node with the value n 3. Searching for a node in a Binary heap of size n
 <!-- [0x21] | [Is Complete](./102-binary_tree_is_complete.c) | A  function that checks if a binary tree is complete. -->
  
